@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* OVERALL */
+
+body{
+    background-color: #01401c4d;
+}
+
+a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: relative;
+    right: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+  }
+
+.skip:focus{
+    position: relative;
+    left: 0;
+    top: 20px;
+  }
+
+nav {
+    background-color: #F2B05E;
+    /* padding: 25px 10px; */
+    text-align: center;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 10px
+}
+
+nav a:link{
+    color: #0b18d8;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.nav_links li{
+    padding: 3px;
+    margin: 5px;
+}
+
+nav a:hover{
+    font-weight: bold;
+    border: 2px dotted #0b18d8;
+    padding: 2px;
+    margin: 2px;
+}
+
+nav a:visited{
+    color: #0b18d8;
+    text-decoration: none;
+}
+
+.active a{
+    font-weight: bold;
+    border: 2px dotted #0b18d8;
+    padding: 2px;
+    margin: 2px;
+}
+
+h1 {
+    font-size: 3em;
+    outline: rgb(2, 68, 2);
+    text-shadow: 1px 1px #01401c4d, -1px -1px #01401c4d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:white;
+    margin: 40px;
+    position: relative;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #01401C;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+p, ul {
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: 2px;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+/* INDEX */
+
+#index_body{
+    background-image: url(../images/palm_wide_background.jpg);
+    background-color: rgb(2, 68, 2);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_body{
+    padding: 10px;
+    background-color: #01401C;
+    color: white;
+    opacity: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.intro_body p{
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+form {
+    border: 3px dotted #f1f1f1;
+    background-color: #01401C;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+  }
+
+legend{
+    font-size: 115%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 'Raleway', sans-serif;
+    margin-bottom: 2%;
+  }
+
+label{
+    display: inline-block;
+    width:15%;
+    padding: 10px;
+  }
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+input[type=radio] {
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    }
+
+label[for=radio]{
+    width: 50%;
+    padding: 10px;
+}
+
+button[type=submit] {
+    background-color: #F2B05E;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 25%;
+    font-size: 1em;
+  }
+
+button[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+textarea{
+    width: 70%;
+    height: 10vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+#neon_sign{
+    animation-name: birdmove;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    align-self: center;
+    border: 10px solid white;
+}
+
+@keyframes birdmove {
+    from {width: 250px;
+        border: 4px solid white;
+     }
+    to {width: 400px;
+        border-width: 10px;
+        border-style: inset;
+        border-color: #F2A444 #F28157 #F2A444 #F28157;
+     }
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    margin: 15px;
+}
+
+.gallery div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gallery img{
+    border: 8px solid white;
+}
+
+.gallery img:hover{
+    border-color: #b45894;
+}
+
+.gallery div:nth-child(3n) img{
+    border-color: #b45894;
+}
+
+.gallery div:nth-child(3n) img:hover{
+    border-color: white;
+}
+
+/* HISTORY */
+
+#history_body{
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(2, 68, 2, 0.11);
+}
+
+#goodbye{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #b45894;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+/* ESSENTIALS */
+
+.gallery_drinks img {
+    border: 8px solid white;
+}
+
+
+.gallery_drinks img:hover {
+    background-color: #b45894;
+    border-color: #b45894;
+}
+
+.gallery_drinks div img:nth-child(3n){
+    border-color: #b45894;
+}
+
+.gallery_drinks h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #b45894;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.gallery_drinks {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.gallery_drinks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.show{
+    display: block;
+}
+
+.control {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 3px;
+  }
+
+.control:hover{
+    background-color: #b45894;
+    color: white;
+    font-size: 1.2em;
+}
+
+.control:focus{
+    background-color: #b45894;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.mixitup-control-active{
+    background-color: #b45894;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.alcohols{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+a.top{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#back-to-top{
+    text-align: center;
+    padding: 20px;
+}
+
+#back-to-top a:link{
+    text-decoration: none;
+    color: #0b18d8;
+}
+
+#back-to-top a:visited{
+    text-decoration: none;
+    color: #0b18d8;
+}
+
+#back-to-top a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px dotted #0b18d8;
+    padding: 2px;
+    margin: 2px;
+}
+
+/* FUTURE */
+
+.bar_gallery{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bar_gallery img{
+    height: 320px;
+    width: 300px;
+    border: 10px solid white;
+    padding: 0px;
+}
+
+.bar_gallery p{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+.bar_gallery h1 {
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:white;
+    margin: 40px;
+}
+
+.opening {
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 2px black dotted;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.closing{
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flip-card-1, .flip-card-2, .flip-card-3{
+    background-color: transparent;
+    width: 300px;
+    height: 320px;
+    perspective: 10000px;
+}
+
+  .flip-card-inner-1, .flip-card-inner-2, .flip-card-inner-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card-1:hover .flip-card-inner-1, .flip-card-1:focus-within .flip-card-inner-1, .flip-card-1:active .flip-card-inner-1, .flip-card-1:focus .flip-card-inner-1,
+  .flip-card-2:hover .flip-card-inner-2, .flip-card-2:focus-within .flip-card-inner-2, .flip-card-2:active .flip-card-inner-2, .flip-card-2:focus .flip-card-inner-2,
+  .flip-card-3:hover .flip-card-inner-3, .flip-card-3:focus-within .flip-card-inner-3, .flip-card-3:active .flip-card-inner-3, .flip-card-3:focus .flip-card-inner-3 {
+    transform: rotateX(180deg);
+  }
+
+  .flip-card-front-1, .flip-card-back-1,
+  .flip-card-front-2, .flip-card-back-2,
+  .flip-card-front-3, .flip-card-back-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back-1, .flip-card-back-2, .flip-card-back-3  {
+    background-color: #01401C;
+    color: white;
+    transform: rotateX(180deg);
+  }
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion) {
+    #neon_sign{
+        animation: none;
+        align-self: center;
+    }
+
+    #index_body{
+        background-attachment: initial;
+      }
+
+    .flip-card-1:hover .flip-card-inner-1, .flip-card-1:focus-within .flip-card-inner-1, .flip-card-1:active .flip-card-inner-1, .flip-card-1:focus .flip-card-inner-1,
+    .flip-card-2:hover .flip-card-inner-2, .flip-card-2:focus-within .flip-card-inner-2, .flip-card-2:active .flip-card-inner-2, .flip-card-2:focus .flip-card-inner-2,
+    .flip-card-3:hover .flip-card-inner-3, .flip-card-3:focus-within .flip-card-inner-3, .flip-card-3:active .flip-card-inner-3, .flip-card-3:focus .flip-card-inner-3 {
+        transform: none;
+      }
+
+}
+
+/* MEDIA SCREENS*/
+
+@media screen and (min-width: 700px){
+
+    .nav_links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row nowrap;
+        padding: 5px;
+    }
+
+    nav {
+        padding: 25px 10px;
+    }
+
+    .alcohols{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery, .gallery_drinks{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .gallery, .gallery_drinks{
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
