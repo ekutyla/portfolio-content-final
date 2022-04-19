@@ -150,7 +150,7 @@ form {
     padding: 5px;
 }
 
-legend{
+#formhead{
     font-size: 100%;
     font-style:italic;
     text-transform: uppercase;
